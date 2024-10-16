@@ -15,8 +15,8 @@ jobs:
     runs-on: ubuntu-latest
     name: Build and Deploy Job
     env: 
-      VUE_APP_ORDER_SERVICE_URL: order-service-dkbmbjf8a5dganfz.canadacentral-01.azurewebsites.net
-      VUE_APP_PRODUCT_SERVICE_URL: product-service-aug4ematcbfjexhn.canadacentral-01.azurewebsites.net
+      VUE_APP_ORDER_SERVICE_URL: https://order-service-dkbmbjf8a5dganfz.canadacentral-01.azurewebsites.net/
+      VUE_APP_PRODUCT_SERVICE_URL: https://product-service-aug4ematcbfjexhn.canadacentral-01.azurewebsites.net/
     steps:
       - uses: actions/checkout@v3
         with:
