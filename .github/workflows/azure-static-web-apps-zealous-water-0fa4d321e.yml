@@ -14,7 +14,7 @@ jobs:
     if: github.event_name == 'push' || (github.event_name == 'pull_request' && github.event.action != 'closed')
     runs-on: ubuntu-latest
     name: Build and Deploy Job
-        env: 
+    env: 
       VUE_APP_ORDER_SERVICE_URL: order-service-dkbmbjf8a5dganfz.canadacentral-01.azurewebsites.net
       VUE_APP_PRODUCT_SERVICE_URL: product-service-aug4ematcbfjexhn.canadacentral-01.azurewebsites.net
     steps:
